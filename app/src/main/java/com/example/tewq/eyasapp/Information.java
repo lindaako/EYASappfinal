@@ -28,6 +28,8 @@ import java.util.Arrays;
 
 public class Information extends AppCompatActivity  {
 
+    final LoginActivity.Singleton training = LoginActivity.Singleton.getInstance();
+    final int data=training.getData();
     final LoginActivity.Singleton M_leveldata=LoginActivity.Singleton.getInstance();
     final LoginActivity.Singleton M_accuracydata=LoginActivity.Singleton.getInstance();
     final LoginActivity.Singleton M_reactiontimedata=LoginActivity.Singleton.getInstance();
@@ -178,9 +180,25 @@ public class Information extends AppCompatActivity  {
             information_result_score_txt.setText(score+" %");
             information_result_time_txt.setText(responseTime+" 초");
 
-            M_leveldata.setDataMLev(level);
-            M_accuracydata.setDataMAcc(score);
-            M_reactiontimedata.setDataMRt(responseTime);
+
+            String trainingno = String.valueOf(data);
+            if ((trainingno.equals("0")))
+            {
+                //assessement mode
+                M_leveldata.setDataMLev(level);
+                M_accuracydata.setDataMAcc(score);
+                M_reactiontimedata.setDataMRt(responseTime);
+            }
+            else if ((trainingno.equals("1")))
+            {
+                //training mode
+                //Do nothing
+            }
+            else
+            {
+
+            }
+
 
         }
     }

@@ -37,6 +37,8 @@ public class Visual_1 extends AppCompatActivity {
     final LoginActivity.Singleton V_leveldata=LoginActivity.Singleton.getInstance();
     final LoginActivity.Singleton V_accuracydata=LoginActivity.Singleton.getInstance();
     final LoginActivity.Singleton V_reactiontimedata=LoginActivity.Singleton.getInstance();
+    final LoginActivity.Singleton training = LoginActivity.Singleton.getInstance();
+    final int data=training.getData();
 
     double responseTime = 0;
     long currentTime = 0;
@@ -706,10 +708,24 @@ public class Visual_1 extends AppCompatActivity {
         audio_result_score_txt.setText(""+ point + " %");
         audio_result_time_txt.setText(""+ responseTime  + "초");
 
+        String trainingno = String.valueOf(data);
+        if ((trainingno.equals("0")))
+        {
+            //assessement mode
+            V_leveldata.setDataVLev(find_level);
+            V_accuracydata.setDataVAcc(point);
+            V_reactiontimedata.setDataVRt(responseTime);
+        }
+        else if ((trainingno.equals("1")))
+        {
+            //training mode
+            //Do nothing
+        }
+        else
+        {
 
-        V_leveldata.setDataVLev(find_level);
-        V_accuracydata.setDataVAcc(point);
-        V_reactiontimedata.setDataVRt(responseTime);
+        }
+
 
 
 
