@@ -14,7 +14,7 @@ package com.example.tewq.eyasapp;
 public class AudioActivity extends AppCompatActivity {
 
     final LoginActivity.Singleton training = LoginActivity.Singleton.getInstance();
-    final int data=training.getData();
+    final int data2=training.getData();
     final LoginActivity.Singleton A_leveldata = LoginActivity.Singleton.getInstance();
     final LoginActivity.Singleton A_accuracydata=LoginActivity.Singleton.getInstance();
     final LoginActivity.Singleton A_reactiontimedata=LoginActivity.Singleton.getInstance();
@@ -167,7 +167,7 @@ public class AudioActivity extends AppCompatActivity {
             audio_result_score_txt.setText(score+" %");
             audio_result_time_txt.setText(responseTime+" 초");
 
-            String trainingno = String.valueOf(data);
+            String trainingno = String.valueOf(data2);
             if ((trainingno.equals("0")))
             {
                 //assessement mode

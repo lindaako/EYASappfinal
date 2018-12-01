@@ -29,7 +29,7 @@ import java.util.Arrays;
 public class Information extends AppCompatActivity  {
 
     final LoginActivity.Singleton training = LoginActivity.Singleton.getInstance();
-    final int data=training.getData();
+    final int data3=training.getData();
     final LoginActivity.Singleton M_leveldata=LoginActivity.Singleton.getInstance();
     final LoginActivity.Singleton M_accuracydata=LoginActivity.Singleton.getInstance();
     final LoginActivity.Singleton M_reactiontimedata=LoginActivity.Singleton.getInstance();
@@ -181,7 +181,7 @@ public class Information extends AppCompatActivity  {
             information_result_time_txt.setText(responseTime+" 초");
 
 
-            String trainingno = String.valueOf(data);
+            String trainingno = String.valueOf(data3);
             if ((trainingno.equals("0")))
             {
                 //assessement mode

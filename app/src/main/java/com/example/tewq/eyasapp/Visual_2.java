@@ -27,7 +27,7 @@ public class Visual_2 extends AppCompatActivity {
     final LoginActivity.Singleton V_accuracydata=LoginActivity.Singleton.getInstance();
     final LoginActivity.Singleton V_reactiontimedata=LoginActivity.Singleton.getInstance();
     final LoginActivity.Singleton training = LoginActivity.Singleton.getInstance();
-    final int data=training.getData();
+    final int data1=training.getData();
 
     double responseTime = 0;
     long currentTime = 0;
@@ -744,7 +744,7 @@ public class Visual_2 extends AppCompatActivity {
         audio_result_time_txt.setText(""+ responseTime  + "초");
 
 
-        String trainingno = String.valueOf(data);
+        String trainingno = String.valueOf(data1);
         if ((trainingno.equals("0")))
         {
             //assessement mode

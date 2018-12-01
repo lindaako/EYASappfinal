@@ -63,7 +63,7 @@ public class TrainingModeActivity2 extends AppCompatActivity
                     }
                 });
 
-                logout_declaration.setNegativeButton("아니", new DialogInterface.OnClickListener() {
+                logout_declaration.setNegativeButton("아니요", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int whichButton)
                     {
@@ -149,7 +149,7 @@ public class TrainingModeActivity2 extends AppCompatActivity
             }
         });
 
-        exit_declaration.setNegativeButton("아니", new DialogInterface.OnClickListener() {
+        exit_declaration.setNegativeButton("아니요", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int whichButton)
             {

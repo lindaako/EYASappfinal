@@ -65,6 +65,7 @@ public class LoginActivity extends AppCompatActivity {
         private int data;
         private String e_mail;
         private String pass_reset;
+        private String uname;
 
         private int A_leveldata;
         private int A_accuracydata;
@@ -95,6 +96,7 @@ public class LoginActivity extends AppCompatActivity {
             {
                 this.pass_reset=cc;
             }
+        public void setStringuname(String u) { this.uname=u; }
 
         public void setDataALev(int alv) { this. A_leveldata=alv; }
         public void setDataAAcc(int aad) { this. A_accuracydata=aad; }
@@ -126,24 +128,25 @@ public class LoginActivity extends AppCompatActivity {
                 return this.e_mail;
             }
         public String getCodeString() { return this.pass_reset;}
+        public String getStringuname() { return this.uname; }
 
-            public int getDataALev() { return this. A_leveldata; }
-            public int getDataAAcc() { return this. A_accuracydata; }
-            public double getDataARt() { return this.A_reactiontimedata; }
+        public int getDataALev() { return this. A_leveldata; }
+        public int getDataAAcc() { return this. A_accuracydata; }
+        public double getDataARt() { return this.A_reactiontimedata; }
 
-            public int getDataVLev() { return this. V_leveldata; }
-            public int getDataVAcc()
+        public int getDataVLev() { return this. V_leveldata; }
+        public int getDataVAcc()
             {
                 return this.V_accuracydata;
             }
-            public double getDataVRt() { return this.V_reactiontimedata; }
+        public double getDataVRt() { return this.V_reactiontimedata; }
 
-            public int getDataMLev() { return this. M_leveldata; }
-            public int getDataMAcc()
+        public int getDataMLev() { return this. M_leveldata; }
+        public int getDataMAcc()
             {
                 return this.M_accuracydata;
             }
-            public double getDataMRt()
+        public double getDataMRt()
             {
                 return this.M_reactiontimedata;
             }
@@ -161,18 +164,8 @@ public class LoginActivity extends AppCompatActivity {
 
         Singleton e_mail=Singleton.getInstance();
         Singleton pass_reset=Singleton.getInstance();
+        Singleton uname=Singleton.getInstance();
 
-        Singleton A_leveldata=Singleton.getInstance();
-        Singleton A_accuracydata=Singleton.getInstance();
-        Singleton A_reactiontimedata=Singleton.getInstance();
-
-        Singleton V_leveldata=Singleton.getInstance();
-        Singleton V_accuracydata=Singleton.getInstance();
-        Singleton V_reactiontimedata=Singleton.getInstance();
-
-        Singleton M_leveldata=Singleton.getInstance();
-        Singleton M_accuracydata=Singleton.getInstance();
-        Singleton M_reactiontimedata=Singleton.getInstance();
 
 
         @Override
@@ -300,6 +293,7 @@ public class LoginActivity extends AppCompatActivity {
             {
                 Map<String, String>  params = new HashMap<String, String>();
                 params.put("username", etUsername.getText().toString());
+                uname.setStringuname(etUsername.getText().toString());
                 params.put("password", etPassword.getText().toString());
                 return params;
             }
