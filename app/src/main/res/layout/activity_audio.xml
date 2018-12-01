@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".AudioActivity">
+
+
+    <ImageView
+        android:id="@+id/audio_select_bg1"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/audio_select"
+        />
+
+    <Button
+        android:id="@+id/bBack"
+        android:layout_width="32dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="296dp"
+        android:background="@drawable/b"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/audio_select_button1"
+        android:layout_width="195dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="250dp"
+        android:background="#00000000"
+        android:onClick="onClickButton"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/audio_select_1" />
+
+    <ImageButton
+        android:id="@+id/audio_select_button2"
+        android:layout_width="196dp"
+        android:layout_height="220dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="40dp"
+        android:background="#00000000"
+        android:onClick="onClickButton"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        app:srcCompat="@drawable/audio_select_2" />
+
+    <ImageView
+        android:id="@+id/audio_result_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/audio_result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/audio_result_level"
+        android:layout_width="48dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/audio_result_level"
+        android:layout_marginRight="180dp"
+        android:layout_marginBottom="130dp"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="107dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/audio_result_line"
+        android:layout_width="250dp"
+        android:layout_height="10dp"
+        app:srcCompat="@drawable/audio_result_line"
+        android:layout_marginBottom="80dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="157dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/audio_result_line2"
+        android:layout_width="250dp"
+        android:layout_height="10dp"
+        app:srcCompat="@drawable/audio_result_line"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="157dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/audio_result_level_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1단계"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="402dp"
+        tools:layout_editor_absoluteY="129dp"
+
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:visibility="invisible"
+
+        />
+
+    <ImageView
+        android:id="@+id/audio_result_score"
+        android:layout_width="70dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/audio_result_score"
+
+        android:layout_marginRight="180dp"
+        android:layout_marginBottom="30dp"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="107dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:visibility="invisible"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/audio_result_time"
+        android:layout_width="95dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/audio_result_time"
+
+        android:layout_marginRight="180dp"
+        android:layout_marginTop="70dp"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="107dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:visibility="invisible"
+
+        />
+    <TextView
+        android:id="@+id/audio_result_time_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.5초"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="402dp"
+        tools:layout_editor_absoluteY="129dp"
+
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:visibility="invisible"
+
+        />
+
+    <TextView
+        android:id="@+id/audio_result_score_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="398dp"
+        tools:layout_editor_absoluteY="213dp"
+        android:text="100%"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+
+
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:visibility="invisible"
+        />
+
+    <ImageButton
+        android:id="@+id/audio_result_restart"
+        android:layout_width="117dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/audio_result_restart"
+        android:scaleType="fitXY"
+        android:background="#00000000"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:onClick="onClickButton"
+
+        android:visibility="invisible"
+        />
+
+    <ImageButton
+        android:id="@+id/audio_result_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/audio_result_back"
+        android:scaleType="fitXY"
+        android:background="#00000000"
+        android:layout_marginRight="550dp"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:onClick="onClickButton"
+
+        android:visibility="invisible"
+        />
+</android.support.constraint.ConstraintLayout>

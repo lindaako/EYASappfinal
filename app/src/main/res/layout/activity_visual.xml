@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VisualActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/five"
+        tools:Absolutelayout_editor_absoluteX="0dp"
+        tools:Absolutelayout_editor_absoluteY="-6dp" />
+
+    <Button
+        android:id="@+id/bBack"
+        android:layout_width="32dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="296dp"
+        android:background="@drawable/b"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bGameone"
+        android:layout_width="210dp"
+        android:layout_height="240dp"
+        android:scaleType="fitXY"
+        android:layout_marginRight="250dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        tools:layout_editor_absoluteX="424dp"
+        tools:layout_editor_absoluteY="95dp"
+        android:background="@drawable/q"/>
+
+    <Button
+        android:id="@+id/bGametwo"
+        android:layout_width="210dp"
+        android:layout_height="240dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="424dp"
+        tools:layout_editor_absoluteY="95dp"
+        android:background="@drawable/r" />
+
+
+
+</android.support.constraint.ConstraintLayout>

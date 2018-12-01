@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">EYASapp</string>
+    <string name="pick1">Image</string>
+    <string name="start_button">button</string>
+    <string name="balloon_start_button">image</string>
+    <string name="explain_visual">image</string>
+    <string name="explain_text">다음 그림과 똑같은 풍선을 터치 하세요</string>
+    <string name="explain_startButton">image</string>
+    <string name="play_background">image</string>
+
+    <string name="icon_green">image</string>
+    <string name="icon_purple">image</string>
+    <string name="icon_blue">image</string>
+    <string name="icon_red">image</string>
+    <string name="icon_yellow">image</string>
+
+    <string name="button_green">image</string>
+    <string name="button_purple">image</string>
+    <string name="button_blue">image</string>
+    <string name="button_red">image</string>
+    <string name="button_yellow">image</string>
+
+    <string name="image">image</string>
+    <string name="ImageButton">ImageButton</string>
+
+    <string name="explain">
+        각 상품의 가격과 개수를\n
+        확인하고, 계산하여 \n
+        총 지불해야 하는 금액을\n
+        보기에서 선택하세요.
+    </string>
+
+</resources>

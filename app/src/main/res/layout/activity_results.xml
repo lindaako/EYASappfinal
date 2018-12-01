@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/audio_result"
+        tools:Absolutelayout_editor_absoluteX="0dp"
+        tools:Absolutelayout_editor_absoluteY="-6dp" />
+
+    <TextView
+        android:id="@+id/AuditoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="218dp"
+        android:text="Auditory"
+        android:textAllCaps="true"
+        android:textColor="@color/md_white_1000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/etLevelA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/md_white_1000"
+        android:layout_marginEnd="5dp"
+        android:text="Level"
+        app:layout_constraintEnd_toStartOf="@+id/AuditoryTitle"
+        app:layout_constraintTop_toBottomOf="@+id/AuditoryTitle" />
+
+    <TextView
+        android:id="@+id/etAccuracyA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/md_white_1000"
+        android:text="Accuracy"
+        app:layout_constraintStart_toStartOf="@+id/etLevelA"
+        app:layout_constraintTop_toBottomOf="@+id/etLevelA" />
+
+    <TextView
+        android:id="@+id/etReactiontimeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/md_white_1000"
+        android:text="Reaction time"
+        app:layout_constraintStart_toStartOf="@+id/etAccuracyA"
+        app:layout_constraintTop_toBottomOf="@+id/etAccuracyA" />
+
+    <TextView
+        android:id="@+id/MindTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="238dp"
+        android:text="Mind"
+        android:textAllCaps="true"
+        android:textColor="@color/md_white_1000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/AuditoryTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/AuditoryTitle" />
+
+    <TextView
+        android:id="@+id/etLevelM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="5dp"
+        android:text="Level"
+        app:layout_constraintEnd_toStartOf="@+id/MindTitle"
+        app:layout_constraintTop_toBottomOf="@+id/MindTitle" />
+
+    <TextView
+        android:id="@+id/etReactiontimeM"
+        android:layout_width="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:layout_height="wrap_content"
+        android:text="Reaction time"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etMindReaValueA"
+        app:layout_constraintStart_toStartOf="@+id/etAccuracyM" />
+
+    <TextView
+        android:id="@+id/etAccuracyM"
+        android:layout_width="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Accuracy"
+        app:layout_constraintStart_toStartOf="@+id/etLevelM"
+        app:layout_constraintTop_toBottomOf="@+id/etLevelM" />
+
+    <TextView
+        android:id="@+id/etLevelV"
+        android:layout_width="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="Level"
+        app:layout_constraintBottom_toTopOf="@+id/etAccuracyV"
+        app:layout_constraintStart_toStartOf="@+id/etAccuracyV" />
+
+    <TextView
+        android:id="@+id/etAccuracyV"
+        android:layout_width="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Accurac"
+        app:layout_constraintBottom_toTopOf="@+id/etReactiontimeV"
+        app:layout_constraintStart_toStartOf="@+id/etReactiontimeV" />
+
+    <TextView
+        android:id="@+id/etReactiontimeV"
+        android:layout_width="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:layout_height="wrap_content"
+        android:text="Reaction time"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etVisualReaValueA"
+        app:layout_constraintEnd_toEndOf="@+id/etReactiontimeM"
+        app:layout_constraintStart_toStartOf="@+id/etReactiontimeM" />
+
+    <TextView
+        android:id="@+id/etMindLevValueA"
+        android:layout_width="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        app:layout_constraintEnd_toStartOf="@+id/etMindAccValueA"
+        app:layout_constraintStart_toStartOf="@+id/etMindAccValueA"
+        app:layout_constraintTop_toBottomOf="@+id/MindTitle" />
+
+    <TextView
+        android:id="@+id/etMindAccValueA"
+        android:layout_width="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/etMindReaValueA"
+        app:layout_constraintStart_toStartOf="@+id/etMindReaValueA"
+        app:layout_constraintTop_toBottomOf="@+id/etMindLevValueA" />
+
+    <TextView
+        android:id="@+id/etMindReaValueA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toEndOf="@+id/etReactiontimeM"
+        app:layout_constraintTop_toBottomOf="@+id/etMindAccValueA" />
+
+    <TextView
+        android:id="@+id/VisionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="8dp"
+        android:text="Visual"
+        android:textAllCaps="true"
+        android:textColor="@color/md_white_1000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etLevelV"
+        app:layout_constraintStart_toEndOf="@+id/etLevelV" />
+
+    <TextView
+        android:id="@+id/etVisuaLevValueA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/etVisualAccValueA"
+        app:layout_constraintStart_toEndOf="@+id/VisionTitle" />
+
+    <TextView
+        android:id="@+id/etVisualAccValueA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/etVisualReaValueA"
+        app:layout_constraintEnd_toStartOf="@+id/etVisuaLevValueA"
+        app:layout_constraintStart_toStartOf="@+id/etVisuaLevValueA" />
+
+    <TextView
+        android:id="@+id/etVisualReaValueA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:layout_marginBottom="57dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etVisualAccValueA"
+        app:layout_constraintStart_toStartOf="@+id/etVisualAccValueA" />
+
+    <TextView
+        android:id="@+id/etAuditoryLevValueA"
+        android:layout_width="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        app:layout_constraintEnd_toStartOf="@+id/etAuditoryAccValueA"
+        app:layout_constraintStart_toStartOf="@+id/etAuditoryAccValueA"
+        app:layout_constraintTop_toBottomOf="@+id/AuditoryTitle" />
+
+    <TextView
+        android:id="@+id/etAuditoryAccValueA"
+        android:layout_width="wrap_content"
+        android:textColor="@color/md_white_1000"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/etAuditoryReaValueA"
+        app:layout_constraintStart_toStartOf="@+id/etAuditoryReaValueA"
+        app:layout_constraintTop_toBottomOf="@+id/etAuditoryLevValueA" />
+
+    <TextView
+        android:id="@+id/etAuditoryReaValueA"
+        android:textColor="@color/md_white_1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toEndOf="@+id/etReactiontimeA"
+        app:layout_constraintTop_toBottomOf="@+id/etAuditoryAccValueA" />
+
+    <Button
+        android:id="@+id/bBack"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="332dp"
+        android:background="@drawable/b"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bExit"
+        android:layout_width="35dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="336dp"
+        android:background="@drawable/a"
+        android:onClick="clickexit"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
